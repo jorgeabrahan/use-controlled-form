@@ -1,0 +1,34 @@
+{
+  "name": "use-controlled-form",
+  "version": "1.0.0",
+  "source": "src/useControlledForm.ts",
+  "main": "dist/useControlledForm.js",
+  "module": "dist/useControlledForm.module.js",
+  "unpkg": "dist/useControlledForm.umd.js",
+  "types": "dist/useControlledForm.d.ts",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "author": "jorge_siguenza",
+  "license": "ISC",
+  "description": "A React custom hook for effortless controlled form management, providing built-in state handling and validations for interactive and responsive forms.",
+  "keywords": [
+    "controlled-form",
+    "form-validation",
+    "react-hook",
+    "form-management",
+    "state-management",
+    "user-input"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "microbundle": "^0.15.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
