@@ -5,7 +5,7 @@ Easily manage your React forms with useControlledForm, a custom hook that simpli
 ## Installation
 
 ```bash
-npm install use-controlled-form
+npm install use-managed-form
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install use-controlled-form
 First, import the hook from the package:
 
 ```javascript
-import useControlledForm from 'use-controlled-form';
+import useControlledForm from 'use-managed-form';
 ```
 
 ## Basic Form Setup

@@ -1,5 +1,5 @@
 {
-  "name": "use-controlled-form",
+  "name": "use-managed-form",
   "version": "1.0.0",
   "source": "src/useControlledForm.ts",
   "main": "dist/useControlledForm.js",
