@@ -100,3 +100,9 @@ To clear all validation errors without resetting the field values, use the clear
 ```javascript
 form.clearErrors();
 ```
+
+## Contributing
+
+The source code of this package is available on [GitHub](https://github.com/jorgeabrahan/use-controlled-form). Contributions are welcome.
+
+This package is also published on [npm](https://www.npmjs.com/package/use-managed-form?activeTab=readme).
