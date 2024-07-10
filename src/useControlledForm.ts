@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 
-export const useControlledForm = <T extends Record<string, string | boolean>>(
+const useControlledForm = <T extends Record<string, string | boolean>>(
   initialFormState: T
 ) => {
   const getInitialFormErrors = () => {
@@ -59,3 +59,5 @@ export const useControlledForm = <T extends Record<string, string | boolean>>(
     attachInputError
   }
 }
+
+export default useControlledForm
