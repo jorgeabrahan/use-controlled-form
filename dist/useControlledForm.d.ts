@@ -1,5 +1,5 @@
 import React from 'react';
-export declare const useControlledForm: <T extends Record<string, string | boolean>>(initialFormState: T) => T & {
+declare const useControlledForm: <T extends Record<string, string | boolean>>(initialFormState: T) => T & {
     form: { [K in keyof T]: {
         id: K;
         value: T[K];
@@ -12,3 +12,4 @@ export declare const useControlledForm: <T extends Record<string, string | boole
     onInputChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
     attachInputError: (inputName: keyof T, error: string) => void;
 };
+export default useControlledForm;
