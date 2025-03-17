@@ -1,11 +1,15 @@
 {
   "name": "use-managed-form",
-  "version": "2.0.1",
+  "version": "1.2.0",
   "source": "src/use_form.ts",
-  "main": "dist/use_form.js",
+  "type": "module",
+  "main": "dist/use_form.cjs",
   "module": "dist/use_form.module.js",
-  "unpkg": "dist/use_form.umd.js",
+  "browser": "dist/use_form.umd.js",
   "types": "dist/use_form.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch"
