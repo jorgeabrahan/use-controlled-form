@@ -1,6 +1,6 @@
 {
   "name": "use-managed-form",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "source": "src/use_form.ts",
   "main": "dist/use_form.js",
   "module": "dist/use_form.module.js",
