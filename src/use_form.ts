@@ -13,7 +13,7 @@ const useForm = <T extends Record<string, string | boolean | number>>(
   const [errors, setErrors] = useState<{ [K in keyof T]: string }>(() =>
     getInitialErrors()
   )
-  const isValid = useRef(false)
+  const isInvalid = useRef(false)
   const onChange = (
     event: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -35,7 +35,7 @@ const useForm = <T extends Record<string, string | boolean | number>>(
     }))
   }
   const setError = (inputKey: keyof T, error: string) => {
-    isValid.current = isValid.current || error !== ''
+    isInvalid.current = isInvalid.current || error !== ''
     setErrors((prevErrors) => {
       const updatedErrors: { [K in keyof T]: string } = prevErrors
         ? prevErrors
@@ -46,7 +46,7 @@ const useForm = <T extends Record<string, string | boolean | number>>(
   }
   const clearErrors = () => {
     setErrors(getInitialErrors())
-    isValid.current = false
+    isInvalid.current = false
   }
   const reset = () => {
     setEntries(initialEntries)
@@ -66,7 +66,7 @@ const useForm = <T extends Record<string, string | boolean | number>>(
       }, {} as { [K in keyof T]: { id: K; value: T[K]; error: string } }),
       reset,
       clearErrors,
-      isValid: () => isValid.current
+      isValid: () => !isInvalid.current
     },
     onChange,
     setValue,
